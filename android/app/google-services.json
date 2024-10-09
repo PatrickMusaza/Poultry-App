@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "196338607791",
+    "project_id": "poultry-tty8nf",
+    "storage_bucket": "poultry-tty8nf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196338607791:android:50ea512763f2fba7b9565a",
+        "android_client_info": {
+          "package_name": "com.SIVYHAMAGRICULTURETECHNOLOGY.poultry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196338607791-i70dff51eks4opsifovifksv77e8cth1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.SIVYHAMAGRICULTURETECHNOLOGY.poultry",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "196338607791-sjcfrvu8311g92o11us6pgdk5dt7k3rb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.SIVYHAMAGRICULTURETECHNOLOGY.poultry",
+            "certificate_hash": "910616c0828b2b15dfddefd78c2d276f14aea6e1"
+          }
+        },
+        {
+          "client_id": "196338607791-anchj8gm8ai5vflmcpt2vnqvnrhh0khn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7ZC8LnF81cSZmU-OPC_XJz5rk7FiuN4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196338607791-anchj8gm8ai5vflmcpt2vnqvnrhh0khn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "196338607791-4k1doe4nm0phrfvrb47c5vvs4msli2a1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.SIVYHAMAGRICULTURETECHNOLOGY.poultry"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

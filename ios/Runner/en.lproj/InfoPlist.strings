@@ -1,0 +1,8 @@
+NSCameraUsageDescription = "Do you want that this application  access the camera";
+NSPhotoLibraryUsageDescription = "Do you want that this application  access the phone gallery";
+NSFaceIDUsageDescription = "Do you want that this application  access the biometrics";
+NSBluetoothAlwaysUsageDescription = "Do you want that this application  access the bluetooth";
+NSLocationWhenInUseUsageDescription = "Do you want that this application  access the location";
+NSContactsUsageDescription = "Do you want that this application  access the phone contacts";
+NSMicrophoneUsageDescription = "Do you want that this application  access the microphone";
+PermissionGroupNotification = "Do you want that this application  access the notifications";
