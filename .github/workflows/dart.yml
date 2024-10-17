@@ -15,34 +15,39 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # 2. Set up Flutter environment
-    - name: Setup Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: 'stable'
+    # 2. Install Flutter manually
+    - name: Install Flutter
+      run: |
+        git clone https://github.com/flutter/flutter.git -b stable --depth 1
+        echo "::add-path::$(pwd)/flutter/bin"
+        flutter doctor
 
-    # 3. Install dependencies
-    - name: Install dependencies
+    # 3. Enable macOS architecture support (for M1/M2)
+    - name: Ensure Flutter is using correct architecture
+      run: flutter config --enable-ios
+
+    # 4. Install dependencies
+    - name: Install Flutter dependencies
       run: flutter pub get
 
-    # 4. Update Podfile to ensure Firebase version compatibility
-    - name: Update Podfile
+    # 5. Update Podfile to resolve dependency conflicts
+    - name: Update Podfile for Firebase compatibility
       run: |
         sed -i '' "s|:git => 'https://github.com/invertase/firestore-ios-sdk-frameworks.git', :tag => '10.25.0'|\'Firebase/Firestore\', '11.2.0'|" ios/Podfile
 
-    # 5. Clean Pod cache and install pods
-    - name: Clean Pod cache and install
+    # 6. Clean Pod cache and install dependencies
+    - name: Clean and install CocoaPods
       run: |
         cd ios
         rm -rf Podfile.lock Pods
         pod cache clean --all
         pod install --repo-update
 
-    # 6. Build iOS IPA without code signing
+    # 7. Build iOS IPA without code signing
     - name: Build iOS IPA
       run: flutter build ios --release --no-codesign
 
-    # 7. Upload IPA as a build artifact
+    # 8. Upload the IPA as a build artifact
     - name: Upload IPA
       uses: actions/upload-artifact@v3
       with:
