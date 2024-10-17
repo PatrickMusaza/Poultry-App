@@ -20,34 +20,29 @@ jobs:
       run: |
         git clone https://github.com/flutter/flutter.git -b stable --depth 1
         echo "$(pwd)/flutter/bin" >> $GITHUB_PATH
+        export PATH="$PATH:$(pwd)/flutter/bin"
         flutter doctor
 
-    # 3. Enable macOS architecture support (for M1/M2)
-    - name: Configure Flutter for iOS
+    # 3. Enable iOS support for Flutter
+    - name: Enable iOS for Flutter
       run: flutter config --enable-ios
 
-    # 4. Install dependencies
+    # 4. Install Flutter dependencies
     - name: Install Flutter dependencies
       run: flutter pub get
 
-    # 5. Update Podfile to resolve Firebase conflicts
-    - name: Update Podfile for Firebase compatibility
-      run: |
-        sed -i '' "s|:git => 'https://github.com/invertase/firestore-ios-sdk-frameworks.git', :tag => '10.25.0'|\'Firebase/Firestore\', '11.2.0'|" ios/Podfile
-
-    # 6. Clean and install CocoaPods dependencies
-    - name: Clean and install CocoaPods
+    # 5. Clean and install CocoaPods dependencies
+    - name: Install CocoaPods dependencies
       run: |
         cd ios
         rm -rf Podfile.lock Pods
-        pod cache clean --all
         pod install --repo-update
 
-    # 7. Build iOS IPA without code signing
+    # 6. Build iOS IPA without code signing
     - name: Build iOS IPA
       run: flutter build ios --release --no-codesign
 
-    # 8. Upload the IPA as an artifact
+    # 7. Upload the IPA as an artifact
     - name: Upload IPA
       uses: actions/upload-artifact@v3
       with:
