@@ -640,7 +640,7 @@ class _UpdateChickenWidgetState extends State<UpdateChickenWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'This records the number of chicken you are planning to have.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>

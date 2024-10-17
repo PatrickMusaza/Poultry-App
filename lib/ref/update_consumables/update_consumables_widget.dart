@@ -395,7 +395,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Cost of vaccines and other medications required per kilogram of chicken.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -617,7 +617,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'The price at which each chicken is sold.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -839,7 +839,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Transportation cost involved per chicken.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1061,7 +1061,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Cost of feed for a 50-kilogram bag.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1283,7 +1283,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Cost of water consumption per liter per chicken.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1505,7 +1505,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Daily cost of power consumption per chicken.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1727,7 +1727,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Cost of litter material per chicken.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1949,7 +1949,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Cost of labor required for each chicken.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>

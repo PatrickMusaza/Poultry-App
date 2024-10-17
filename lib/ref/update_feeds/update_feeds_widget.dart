@@ -396,7 +396,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Cost of a 50-kilogram bag of maize.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -618,7 +618,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Price for a 50-kilogram bag of full-fat soya.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -840,7 +840,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Price for a 50-kilogram bag of low-fat soya.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1061,7 +1061,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Cost of a 50-kilogram bag of fish meal.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1282,7 +1282,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Price of a 50-kilogram bag of dicalcium phosphate.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1503,7 +1503,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Cost of a 50-kilogram bag of lime.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1724,7 +1724,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Cost of a 25-kilogram bag of salt.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1946,7 +1946,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Price for a 1-kilogram pack of methionine.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -2168,7 +2168,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Cost of a 1-kilogram pack of broiler vitamin-mineral premix.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -2390,7 +2390,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This reccords the number of chicken you are planning to have.'),
+                                                          'Cost of a 50-kilogram bag of concentrates.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>

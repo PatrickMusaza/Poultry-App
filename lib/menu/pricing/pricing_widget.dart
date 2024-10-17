@@ -273,9 +273,9 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                   ),
                                                 ),
                                               ],
-                                              carouselController:
-                                                  _model.carouselController ??=
-                                                      CarouselSliderController(),
+                                              carouselController: _model
+                                                      .carouselController ??=
+                                                  CarouselSliderController(),
                                               options: CarouselOptions(
                                                 initialPage: 1,
                                                 viewportFraction: 0.5,
@@ -417,11 +417,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                       onChanged:
                                                                           (val) =>
                                                                               safeSetState(() => _model.currencyValue = val),
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       height:
                                                                           76,
                                                                       searchHintTextStyle: FlutterFlowTheme.of(
@@ -540,7 +539,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('This Currency will be used to the price you are adding (or used on the market)'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -578,11 +577,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -720,7 +718,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('How many chickens are you planning to have in your project.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -752,11 +750,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -890,7 +887,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('How much is a day 1 chickon the market.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -922,11 +919,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -1266,11 +1262,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -1402,7 +1397,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('The maximum number of poultry houses that can be efficiently placed in one square meter of space, considering factors like ventilation, crowding, and biosecurity.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -1434,11 +1429,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -1570,7 +1564,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('The number of drinking troughs or nipples required to ensure adequate water access for the poultry population.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -1602,11 +1596,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -1738,7 +1731,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('The number of feeding troughs or pans needed to provide sufficient feed for the poultry without overcrowding or competition.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -1770,11 +1763,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -1906,7 +1898,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('The number of brooders, such as hover heaters or heat lamps, necessary to maintain optimal temperatures for chicks during their brooding period.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -1938,11 +1930,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -2074,7 +2065,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('The number of infrared lamps used for supplemental heating, drying, and promoting chick comfort, especially during cold weather or to aid in feather development.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -2106,11 +2097,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -2242,7 +2232,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('The number of boreholes or wells required to meet the water needs of the poultry farm, considering factors like water quality, quantity, and seasonal variations.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -2274,11 +2264,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -2410,7 +2399,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('The number of tool kits or individual tools necessary for routine maintenance, cleaning, and repairs on the poultry farm. This includes tools for tasks like cleaning cages, repairing equipment, and handling feed and water supplies.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -2667,11 +2656,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -2803,7 +2791,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Cost of vaccines and other medications required per kilogram of chicken.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -2835,11 +2823,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -2971,7 +2958,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('The price at which each chicken is sold.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3003,11 +2990,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -3139,7 +3125,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Transportation cost involved per chicken.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3171,11 +3157,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -3307,7 +3292,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Cost of feed for a 50-kilogram bag.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3339,11 +3324,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -3475,7 +3459,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Cost of water consumption per liter per chicken.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3507,11 +3491,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -3643,7 +3626,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Daily cost of power consumption per chicken.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3675,11 +3658,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -3811,7 +3793,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Cost of litter material per chicken.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3843,11 +3825,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -3979,7 +3960,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Cost of labor required for each chicken.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -4235,11 +4216,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -4371,7 +4351,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Cost of a 50-kilogram bag of maize.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -4403,11 +4383,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -4539,7 +4518,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Price for a 50-kilogram bag of full-fat soya.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -4571,11 +4550,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -4707,7 +4685,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Price for a 50-kilogram bag of low-fat soya.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -4739,11 +4717,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -4875,7 +4852,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Cost of a 50-kilogram bag of fish meal.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -4907,11 +4884,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -5043,7 +5019,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Price of a 50-kilogram bag of dicalcium phosphate.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5075,11 +5051,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -5211,7 +5186,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Cost of a 50-kilogram bag of lime.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5243,11 +5218,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -5379,7 +5353,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Cost of a 25-kilogram bag of salt.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5411,11 +5385,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -5547,7 +5520,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Price for a 1-kilogram pack of methionine.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5579,11 +5552,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -5715,7 +5687,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Cost of a 1-kilogram pack of broiler vitamin-mineral premix.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5747,11 +5719,10 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           .spaceAround,
                                                                   children: [
                                                                     Container(
-                                                                      
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width -
-                                                  65,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width -
+                                                                          65,
                                                                       child:
                                                                           TextFormField(
                                                                         controller:
@@ -5883,7 +5854,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('Cost of a 50-kilogram bag of concentrates.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),

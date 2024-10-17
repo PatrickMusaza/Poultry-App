@@ -390,7 +390,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This records the price of poultry house per 1 square meter.'),
+                                                          'The maximum number of poultry houses that can be efficiently placed in one square meter of space, considering factors like ventilation, crowding, and biosecurity.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -612,7 +612,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This records the price of a drinker.'),
+                                                          'The number of drinking troughs or nipples required to ensure adequate water access for the poultry population.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -834,7 +834,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This records the price of a drinker.'),
+                                                          'The number of feeding troughs or pans needed to provide sufficient feed for the poultry without overcrowding or competition.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1056,7 +1056,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This records the price of a brooder.'),
+                                                          'The number of brooders, such as hover heaters or heat lamps, necessary to maintain optimal temperatures for chicks during their brooding period.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1277,7 +1277,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This records the price of an infraled lamp.'),
+                                                          'The number of infrared lamps used for supplemental heating, drying, and promoting chick comfort, especially during cold weather or to aid in feather development.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1499,7 +1499,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This records the price of one borehole.'),
+                                                          'The number of boreholes or wells required to meet the water needs of the poultry farm, considering factors like water quality, quantity, and seasonal variations.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1721,7 +1721,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This records the price of the set of tools you are planning to use in your farming.'),
+                                                          'The number of tool kits or individual tools necessary for routine maintenance, cleaning, and repairs on the poultry farm. This includes tools for tasks like cleaning cages, repairing equipment, and handling feed and water supplies.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
