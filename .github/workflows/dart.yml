@@ -1,45 +1,50 @@
-# .github/workflows/ios-ipa-build.yaml
 name: Build iOS IPA
 
-on: 
-  workflow_dispatch:  # Manually trigger the workflow
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
-  build-ios:
+  build_ios:
     runs-on: macos-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+    # 1. Checkout repository
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
+    # 2. Set up Flutter environment
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: 'stable'
 
-      - name: Install Dependencies
-        run: |
-          flutter clean  # Ensure previous artifacts are removed
-          flutter pub get
+    # 3. Install dependencies
+    - name: Install dependencies
+      run: flutter pub get
 
-      - name: Install CocoaPods Dependencies
-        run: |
-          cd ios
-          pod install --repo-update
+    # 4. Update Podfile to ensure Firebase version compatibility
+    - name: Update Podfile
+      run: |
+        sed -i '' "s|:git => 'https://github.com/invertase/firestore-ios-sdk-frameworks.git', :tag => '10.25.0'|\'Firebase/Firestore\', '11.2.0'|" ios/Podfile
 
-      - name: Build iOS Release (Unsigned)
-        run: |
-          flutter build ios --release --no-codesign  # Skip signing
+    # 5. Clean Pod cache and install pods
+    - name: Clean Pod cache and install
+      run: |
+        cd ios
+        rm -rf Podfile.lock Pods
+        pod cache clean --all
+        pod install --repo-update
 
-      - name: Prepare IPA
-        run: |
-          cd build/ios/iphoneos
-          mkdir Payload
-          mv Runner.app Payload/
-          zip -r FlutterApp.ipa Payload
+    # 6. Build iOS IPA without code signing
+    - name: Build iOS IPA
+      run: flutter build ios --release --no-codesign
 
-      - name: Upload IPA Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: FlutterApp
-          path: build/ios/iphoneos/FlutterApp.ipa
+    # 7. Upload IPA as a build artifact
+    - name: Upload IPA
+      uses: actions/upload-artifact@v3
+      with:
+        name: app-release.ipa
+        path: build/ios/iphoneos/*.ipa
