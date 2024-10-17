@@ -214,6 +214,23 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           requireAuth: true,
           builder: (context, params) => UpdateFeedsWidget(),
         ),
+        FFRoute(
+          name: 'PrivacyPolicy',
+          path: '/privacyPolicy',
+          requireAuth: true,
+          builder: (context, params) => PrivacyPolicyWidget(),
+        ),
+        FFRoute(
+          name: 'Terms',
+          path: '/Terms',
+          builder: (context, params) => TermsWidget(),
+        ),
+        FFRoute(
+          name: 'HomeBckp',
+          path: '/homeBckp',
+          requireAuth: true,
+          builder: (context, params) => HomeBckpWidget(),
+        )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
 

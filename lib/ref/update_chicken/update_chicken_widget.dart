@@ -375,7 +375,7 @@ class _UpdateChickenWidgetState extends State<UpdateChickenWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'This Currency will be used tothe price you are adding'),
+                                                          'This Currency will be used to the price you are adding'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
