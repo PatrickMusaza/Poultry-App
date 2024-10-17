@@ -13,45 +13,41 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      # Checkout the code from the repository
+      # 1. Checkout the code from the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Set up Flutter environment
+      # 2. Ensure Flutter is installed and set up correctly
       - name: Install Flutter SDK
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'
+          flutter-version: '3.13.0'  # Specify a stable version explicitly
 
-      # Install dependencies
-      - name: Install dependencies
-        run: flutter pub get
+      # 3. Verify Flutter installation (debugging step)
+      - name: Run Flutter doctor
+        run: flutter doctor -v
 
-      # Pre-cache iOS artifacts (important step)
-      - name: Pre-cache iOS artifacts
-        run: flutter precache --ios
+      # 4. Pre-cache iOS artifacts to avoid missing frameworks
+      - name: Pre-cache Flutter iOS artifacts
+        run: flutter precache --ios --force
 
-      # Clean the Flutter project to avoid conflicts
+      # 5. Clean the Flutter project to avoid conflicts
       - name: Clean project
         run: flutter clean
 
-      # Set up CocoaPods environment
+      # 6. Install CocoaPods dependencies
       - name: Install CocoaPods
         run: |
           sudo gem install cocoapods
           pod repo update
 
-      # Install pods for the iOS project
+      # 7. Install Pods in iOS directory
       - name: Install iOS Pods
         working-directory: ios
         run: |
           rm -rf Pods Podfile.lock
           pod install
 
-      # Build the iOS app in release mode
+      # 8. Build the iOS app in release mode without code signing
       - name: Build iOS app
         run: flutter build ios --release --no-codesign
-
-      # Verify Flutter installation (optional step for debugging)
-      - name: Flutter doctor
-        run: flutter doctor
