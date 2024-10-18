@@ -114,7 +114,7 @@ dependency_overrides:
   win32: 5.5.1
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.15.0
+  flutter_launcher_icons: ^0.14.1
   flutter_lints: ^2.0.0
   hive_generator: ^1.1.0
   build_runner: ^2.1.5
