@@ -23,7 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  http: ^0.1.4
+  http: ^0.13.5
   flutter_localizations:
     sdk: flutter
   auto_size_text: 3.0.0
@@ -113,6 +113,7 @@ dependency_overrides:
   http: 1.2.2
   uuid: ^4.0.0
   win32: 5.5.1
+  web: 0.1.4-beta
 
 dev_dependencies:
   flutter_launcher_icons: ^0.14.1
