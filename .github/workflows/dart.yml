@@ -17,13 +17,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Ensure Flutter is installed and set up correctly
+      # 2. Install Flutter SDK
       - name: Install Flutter SDK
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.13.0'  # Specify a stable version explicitly
+          flutter-version: '3.13.0'  # Specify the stable version explicitly
 
-      # 3. Verify Flutter installation (debugging step)
+      # 3. Run Flutter doctor to verify the setup
       - name: Run Flutter doctor
         run: flutter doctor -v
 
@@ -35,19 +35,23 @@ jobs:
       - name: Clean project
         run: flutter clean
 
-      # 6. Install CocoaPods dependencies
+      # 6. Get Flutter dependencies (this generates `Generated.xcconfig`)
+      - name: Get Flutter dependencies
+        run: flutter pub get
+
+      # 7. Install CocoaPods
       - name: Install CocoaPods
         run: |
           sudo gem install cocoapods
           pod repo update
 
-      # 7. Install Pods in iOS directory
+      # 8. Install iOS Pods (ensure `Generated.xcconfig` exists)
       - name: Install iOS Pods
         working-directory: ios
         run: |
           rm -rf Pods Podfile.lock
           pod install
 
-      # 8. Build the iOS app in release mode without code signing
+      # 9. Build the iOS app in release mode without code signing
       - name: Build iOS app
         run: flutter build ios --release --no-codesign
