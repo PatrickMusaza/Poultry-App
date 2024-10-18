@@ -110,7 +110,7 @@ dependencies:
   cupertino_icons: ^1.0.0
 
 dependency_overrides:
-  http: 1.2.2
+  http: 0.1.4
   uuid: ^4.0.0
   win32: 5.5.1
 
