@@ -114,9 +114,10 @@ dependency_overrides:
   uuid: ^4.0.0
   win32: 5.5.1
   web: 0.1.4-beta
+  path: 1.8.3
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.14.1
+  flutter_launcher_icons: ^0.13.0
   flutter_lints: ^2.0.0  # Use a compatible version of lints
   hive_generator: ^1.1.0
   build_runner: ^2.1.5
