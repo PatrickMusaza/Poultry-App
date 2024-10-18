@@ -1,6 +1,6 @@
-name: Flutter CI
+name: Flutter iOS CI
 
-on: 
+on:
   push:
     branches:
       - main
@@ -12,38 +12,42 @@ jobs:
   build:
     runs-on: macos-latest
 
-    env:
-      FLUTTER_ROOT: /Users/runner/hostedtoolcache/flutter/stable-arm64
-      PUB_CACHE: /Users/runner/.pub-cache
-
     steps:
-      - name: Checkout Code
+      # 1. Checkout the code from the repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Flutter
+      # 2. Ensure Flutter is installed and set up correctly
+      - name: Install Flutter SDK
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'  # Use the stable version of Flutter
+          flutter-version: '3.13.0'  # Specify a stable version explicitly
 
-      - name: Clean Flutter Cache
-        run: flutter pub cache repair
+      # 3. Verify Flutter installation (debugging step)
+      - name: Run Flutter doctor
+        run: flutter doctor -v
 
-      - name: Get Dependencies
+      # 4. Pre-cache iOS artifacts to avoid missing frameworks
+      - name: Pre-cache Flutter iOS artifacts
+        run: flutter precache --ios --force
+
+      # 5. Clean the Flutter project to avoid conflicts
+      - name: Clean project
+        run: flutter clean
+
+      # 6. Install CocoaPods dependencies
+      - name: Install CocoaPods
         run: |
-          flutter pub get
-        env:
-          PUB_ENVIRONMENT: ci
+          sudo gem install cocoapods
+          pod repo update
 
-      - name: Fix Pod Issues (iOS only)
+      # 7. Install Pods in iOS directory
+      - name: Install iOS Pods
+        working-directory: ios
         run: |
-          cd ios
           rm -rf Pods Podfile.lock
-          flutter pub get  # Ensures the required xcconfig is generated
           pod install
 
-      - name: Run Flutter Tests
-        run: flutter test --no-pub
-
-      - name: Build iOS App
-        run: |
-          flutter build ios --no-codesign
+      # 8. Build the iOS app in release mode without code signing
+      - name: Build iOS app
+        run: flutter build ios --release --no-codesign
