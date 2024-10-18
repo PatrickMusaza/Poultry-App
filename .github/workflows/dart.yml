@@ -1,6 +1,6 @@
-name: Flutter iOS CI
+name: Flutter CI
 
-on:
+on: 
   push:
     branches:
       - main
@@ -12,44 +12,38 @@ jobs:
   build:
     runs-on: macos-latest
 
+    env:
+      FLUTTER_ROOT: /Users/runner/hostedtoolcache/flutter/stable-arm64
+      PUB_CACHE: /Users/runner/.pub-cache
+
     steps:
-      # 1. Checkout the code from the repository
-      - name: Checkout repository
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      # 2. Install Flutter SDK
-      - name: Install Flutter SDK
+      - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.13.0'  # Specify a stable version
+          flutter-version: 'stable'  # Use the stable version of Flutter
 
-      # 3. Run Flutter doctor to ensure everything is set up
-      - name: Run Flutter doctor
-        run: flutter doctor -v
+      - name: Clean Flutter Cache
+        run: flutter pub cache repair
 
-      # 4. Fetch dependencies with flutter pub get
-      - name: Get Flutter dependencies
-        run: flutter pub get
-
-      # 5. Pre-cache iOS artifacts to avoid missing frameworks
-      - name: Pre-cache Flutter iOS artifacts
-        run: flutter precache --ios --force
-
-      # 6. Clean Flutter project to avoid conflicts
-      - name: Clean project
-        run: flutter clean
-
-      # 7. Install CocoaPods dependencies
-      - name: Install CocoaPods
-        run: sudo gem install cocoapods
-
-      # 8. Install Pods in iOS directory
-      - name: Install iOS Pods
-        working-directory: ios
+      - name: Get Dependencies
         run: |
+          flutter pub get
+        env:
+          PUB_ENVIRONMENT: ci
+
+      - name: Fix Pod Issues (iOS only)
+        run: |
+          cd ios
           rm -rf Pods Podfile.lock
+          flutter pub get  # Ensures the required xcconfig is generated
           pod install
 
-      # 9. Build iOS app in release mode without code signing
-      - name: Build iOS app
-        run: flutter build ios --release --no-codesign
+      - name: Run Flutter Tests
+        run: flutter test --no-pub
+
+      - name: Build iOS App
+        run: |
+          flutter build ios --no-codesign
