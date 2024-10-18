@@ -21,7 +21,7 @@ jobs:
       - name: Install Flutter SDK
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.13.0'  # Specify the stable version explicitly
+          flutter-version: '3.13.0'  # Specify the Flutter version explicitly
 
       # 3. Run Flutter doctor to verify the setup
       - name: Run Flutter doctor
@@ -35,7 +35,7 @@ jobs:
       - name: Clean project
         run: flutter clean
 
-      # 6. Get Flutter dependencies (this generates `Generated.xcconfig`)
+      # 6. Get Flutter dependencies
       - name: Get Flutter dependencies
         run: flutter pub get
 
@@ -45,13 +45,20 @@ jobs:
           sudo gem install cocoapods
           pod repo update
 
-      # 8. Install iOS Pods (ensure `Generated.xcconfig` exists)
+      # 8. Install iOS Pods
       - name: Install iOS Pods
         working-directory: ios
         run: |
           rm -rf Pods Podfile.lock
           pod install
 
-      # 9. Build the iOS app in release mode without code signing
+      # 9. Build the iOS app without code signing
       - name: Build iOS app
-        run: flutter build ios --release --no-codesign
+        run: flutter build ipa --release --no-codesign
+
+      # 10. Upload IPA Artifact
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ipa-release
+          path: build/ios/ipa/*.ipa
