@@ -1,4 +1,4 @@
-name: Flutter iOS CI
+name: Flutter iOS BUILD
 
 on:
   push:
