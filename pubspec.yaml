@@ -20,7 +20,7 @@ dependencies:
   cloud_firestore: ^5.4.4
   cloud_firestore_platform_interface: ^6.4.0
   cloud_firestore_web: ^4.2.0
-  collection: 1.18.0
+  collection: 1.17.2 # Downgraded to match flutter_test
   dropdown_button2: 2.3.9
   easy_debounce: ^2.0.3
   file_picker: ^8.1.2
