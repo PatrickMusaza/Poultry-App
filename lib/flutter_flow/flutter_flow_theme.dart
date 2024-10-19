@@ -232,7 +232,7 @@ class MobileTypography extends Typography {
         'Urbanist',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
-        fontSize: 36.0,
+        fontSize: 30.0,
       );
   String get headlineLargeFamily => 'Urbanist';
   TextStyle get headlineLarge => GoogleFonts.getFont(
@@ -344,7 +344,7 @@ class TabletTypography extends Typography {
         'Urbanist',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
-        fontSize: 36.0,
+        fontSize: 30.0,
       );
   String get headlineLargeFamily => 'Urbanist';
   TextStyle get headlineLarge => GoogleFonts.getFont(
@@ -456,7 +456,7 @@ class DesktopTypography extends Typography {
         'Urbanist',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
-        fontSize: 36.0,
+        fontSize: 30.0,
       );
   String get headlineLargeFamily => 'Urbanist';
   TextStyle get headlineLarge => GoogleFonts.getFont(
