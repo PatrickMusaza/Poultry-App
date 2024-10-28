@@ -28,3 +28,4 @@ export '/settings/privacy_policy/privacy_policy_widget.dart'
     show PrivacyPolicyWidget;
 export '/settings/terms/terms_widget.dart' show TermsWidget;
 export '/pages/home_bckp/home_bckp_widget.dart' show HomeBckpWidget;
+export '/pages/management/management_widget.dart' show ManagementWidget;

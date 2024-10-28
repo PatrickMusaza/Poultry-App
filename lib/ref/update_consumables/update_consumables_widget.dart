@@ -395,7 +395,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Cost of vaccines and other medications required per kilogram of chicken.'),
+                                                          'The cost of vaccines and medications required per kilogram of poultry, ensuring disease prevention and health maintenance.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -617,7 +617,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'The price at which each chicken is sold.'),
+                                                          'The price at which each grown chicken is sold.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -839,7 +839,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Transportation cost involved per chicken.'),
+                                                          'The transportation cost incurred per chicken, including delivery to markets or buyers.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>

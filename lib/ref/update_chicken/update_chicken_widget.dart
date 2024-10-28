@@ -900,7 +900,7 @@ class _UpdateChickenWidgetState extends State<UpdateChickenWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'How much is a day 1 chick on the market'),
+                                                          'The cost per day-old chick purchased for broiler production.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1160,7 +1160,7 @@ class _UpdateChickenWidgetState extends State<UpdateChickenWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'How much is a grown chicken'),
+                                                          'The cost per grown broiler ready for sale or processing.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>

@@ -224,6 +224,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "expandable",
+      "rootUri": "file:///C:/Users/user/AppData/Local/Pub/Cache/hosted/pub.dev/expandable-5.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "facebook_auth_desktop",
       "rootUri": "file:///C:/Users/user/AppData/Local/Pub/Cache/hosted/pub.dev/facebook_auth_desktop-2.1.1",
       "packageUri": "lib/",
@@ -1238,7 +1244,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-10-19T17:07:41.232888Z",
+  "generated": "2024-10-28T18:54:17.270756Z",
   "generator": "pub",
   "generatorVersion": "3.5.3",
   "flutterRoot": "file:///C:/Config/App/Dev/Flutter/flutter_windows_3.19.6-stable/flutter",

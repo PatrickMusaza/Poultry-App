@@ -390,7 +390,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'The maximum number of poultry houses that can be efficiently placed in one square meter of space, considering factors like ventilation, crowding, and biosecurity.'),
+                                                          'The cost per square meter for constructing poultry houses, including materials and labor.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -612,7 +612,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'The number of drinking troughs or nipples required to ensure adequate water access for the poultry population.'),
+                                                          'The cost of each drinker needed to ensure water access for the poultry population, minimizing wastage.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -834,7 +834,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'The number of feeding troughs or pans needed to provide sufficient feed for the poultry without overcrowding or competition.'),
+                                                          'The price per feeder, ensuring that all birds can access feed without overcrowding or competition.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1056,7 +1056,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'The number of brooders, such as hover heaters or heat lamps, necessary to maintain optimal temperatures for chicks during their brooding period.'),
+                                                          'The cost per brooder, including hover heaters or other heat sources, necessary to maintain optimal temperatures for chicks during brooding.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1277,7 +1277,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'The number of infrared lamps used for supplemental heating, drying, and promoting chick comfort, especially during cold weather or to aid in feather development.'),
+                                                          'The price of infrared lamps per watt, used to provide supplemental heat, especially during colder periods.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1499,7 +1499,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'The number of boreholes or wells required to meet the water needs of the poultry farm, considering factors like water quality, quantity, and seasonal variations.'),
+                                                          'The total cost of installing a borehole to meet the water needs of the poultry farm.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1721,7 +1721,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'The number of tool kits or individual tools necessary for routine maintenance, cleaning, and repairs on the poultry farm. This includes tools for tasks like cleaning cages, repairing equipment, and handling feed and water supplies.'),
+                                                          'The price of each set of tools required for farm maintenance, cleaning, and repairs.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>

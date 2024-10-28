@@ -230,6 +230,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           path: '/homeBckp',
           requireAuth: true,
           builder: (context, params) => HomeBckpWidget(),
+        ),
+        FFRoute(
+          name: 'Management',
+          path: '/management',
+          requireAuth: true,
+          builder: (context, params) => ManagementWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

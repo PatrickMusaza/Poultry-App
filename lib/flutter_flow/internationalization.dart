@@ -461,6 +461,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Edit',
       'fr': '',
     },
+    '5ukmg46nm':{
+      'en': 'Management Tool',
+    }, 
     '4nixk8gw': {
       'en': 'CAPITAL INVESTMENT TOTALS',
       'fr': '',
@@ -1196,27 +1199,27 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
     '9gsggqw4': {
-      'en': 'Drinker Amount*',
+      'en': 'Drinker Price*',
       'fr': '',
     },
     'l55j1zew': {
-      'en': 'Feeder Amount*',
+      'en': 'Feeder Price*',
       'fr': '',
     },
     'f6gae1qc': {
-      'en': 'Brooder Amount*',
+      'en': 'Brooder Price*',
       'fr': '',
     },
     'c191mrcc': {
-      'en': 'Infrared Lamp Amount*',
+      'en': 'Infrared Lamp Price*',
       'fr': '',
     },
     '0il5j4dr': {
-      'en': 'Borehole Amount*',
+      'en': 'Borehole Price*',
       'fr': '',
     },
     'dlkz4uz2': {
-      'en': 'Set of Tools Amount per set*',
+      'en': 'Set of Tools Price per set*',
       'fr': '',
     },
     'kgnegynh': {
@@ -6044,27 +6047,27 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
     '2fftts8c': {
-      'en': 'Drinker Amount*',
+      'en': 'Drinker Price*',
       'fr': '',
     },
     '57dluyty': {
-      'en': 'Feeder Amount*',
+      'en': 'Feeder Price*',
       'fr': '',
     },
     'zuv13mqv': {
-      'en': 'Brooder Amount*',
+      'en': 'Brooder Price*',
       'fr': '',
     },
     'zxf8f2hx': {
-      'en': 'Infrared Lamp Amount*',
+      'en': 'Infrared Lamp Price*',
       'fr': '',
     },
     'njp5xldq': {
-      'en': 'Borehole Amount*',
+      'en': 'Borehole Price*',
       'fr': '',
     },
     'p4cehkwk': {
-      'en': 'Set of Tools Amount*',
+      'en': 'Set of Tools Price*',
       'fr': '',
     },
     '96sd1zxq': {
@@ -7006,5 +7009,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'fr': '',
     },
+  },
+  //Management
+  {
+'w6zqmj7g':{
+  'en':'SIVYHAM AGRICULTURE TECHNOLOGY',
+},
+'tn5mczkg':{
+  'en': 'Frequently Asked Questions',
+}, 
+'j6laf6ec':{
+  'en': 'What are the factors affecting broiler chicken production costs?',
+}, 
+'spcfx73b':{
+  'en': 'Expand to check the answer',
+}, 
+'mcoo8awz':{
+  'en': 'Factors that affect broiler chicken production costs include feed prices, labor costs, energy costs, and the cost of medications and vaccines. Feed prices can have a significant impact on overall production costs as feed typically accounts for the largest expense in raising broiler chickens. Labor costs, including wages and benefits for farm workers, also play a role in determining production costs. Energy costs, such as electricity and heating, are necessary to maintain suitable conditions in broiler houses, and fluctuations in energy prices can affect production costs. Additionally, the cost of medications and vaccines to prevent and treat diseases in broiler chickens is another important factor to consider when calculating production costs.',
+}, 
   },
 ].reduce((a, b) => a..addAll(b));

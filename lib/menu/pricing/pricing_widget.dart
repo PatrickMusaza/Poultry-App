@@ -887,7 +887,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a day 1 chickon the market.'),
+                                                                              content: Text('The cost per day-old chick purchased for broiler production.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -1056,7 +1056,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('How much is a grown chicken'),
+                                                                              content: Text('The cost per grown broiler ready for sale or processing.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -1397,7 +1397,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('The maximum number of poultry houses that can be efficiently placed in one square meter of space, considering factors like ventilation, crowding, and biosecurity.'),
+                                                                              content: Text('The cost per square meter for constructing poultry houses, including materials and labor.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -1564,7 +1564,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('The number of drinking troughs or nipples required to ensure adequate water access for the poultry population.'),
+                                                                              content: Text('The cost of each drinker needed to ensure water access for the poultry population, minimizing wastage.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -1731,7 +1731,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('The number of feeding troughs or pans needed to provide sufficient feed for the poultry without overcrowding or competition.'),
+                                                                              content: Text('The price per feeder, ensuring that all birds can access feed without overcrowding or competition.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -1898,7 +1898,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('The number of brooders, such as hover heaters or heat lamps, necessary to maintain optimal temperatures for chicks during their brooding period.'),
+                                                                              content: Text('The cost per brooder, including hover heaters or other heat sources, necessary to maintain optimal temperatures for chicks during brooding.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -2065,7 +2065,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('The number of infrared lamps used for supplemental heating, drying, and promoting chick comfort, especially during cold weather or to aid in feather development.'),
+                                                                              content: Text('The price of infrared lamps per watt, used to provide supplemental heat, especially during colder periods.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -2232,7 +2232,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('The number of boreholes or wells required to meet the water needs of the poultry farm, considering factors like water quality, quantity, and seasonal variations.'),
+                                                                              content: Text('The total cost of installing a borehole to meet the water needs of the poultry farm.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -2399,7 +2399,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('The number of tool kits or individual tools necessary for routine maintenance, cleaning, and repairs on the poultry farm. This includes tools for tasks like cleaning cages, repairing equipment, and handling feed and water supplies.'),
+                                                                              content: Text('The price of each set of tools required for farm maintenance, cleaning, and repairs.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -2791,7 +2791,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Cost of vaccines and other medications required per kilogram of chicken.'),
+                                                                              content: Text('The cost of vaccines and medications required per kilogram of poultry, ensuring disease prevention and health maintenance.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -2958,7 +2958,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('The price at which each chicken is sold.'),
+                                                                              content: Text('The price at which each grown chicken is sold.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3125,7 +3125,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Transportation cost involved per chicken.'),
+                                                                              content: Text('The transportation cost incurred per chicken, including delivery to markets or buyers.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5881,7 +5881,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                   padding: EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0,
-                                                                          10,
+                                                                          0,
                                                                           0,
                                                                           20),
                                                                   child: Row(
@@ -6026,12 +6026,12 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                 Align(
                                                   alignment:
                                                       AlignmentDirectional(
-                                                          -1, 1),
+                                                          0, 1),
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                16, 0, 0, 16),
+                                                                0, 0, 0, 0),
                                                     child: smooth_page_indicator
                                                         .SmoothPageIndicator(
                                                       controller: _model
