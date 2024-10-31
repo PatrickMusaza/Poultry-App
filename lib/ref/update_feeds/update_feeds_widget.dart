@@ -396,7 +396,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Cost of a 50-kilogram bag of maize.'),
+                                                          'The cost of a 50-kilogram bag of maize, a key component in poultry feed.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -618,7 +618,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Price for a 50-kilogram bag of full-fat soya.'),
+                                                          'The price of a 50-kilogram bag of full-fat soya, another crucial feed ingredient.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -840,7 +840,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Price for a 50-kilogram bag of low-fat soya.'),
+                                                          'The price of a 50-kilogram bag of low-fat soya.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1061,7 +1061,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Cost of a 50-kilogram bag of fish meal.'),
+                                                          'The cost of a 50-kilogram bag of fish meal, used as a protein source in poultry diets.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1282,7 +1282,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Price of a 50-kilogram bag of dicalcium phosphate.'),
+                                                          'The price of a 50-kilogram bag of dicalcium phosphate, used for bone development in poultry.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1503,7 +1503,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Cost of a 50-kilogram bag of lime.'),
+                                                          'The cost of a 50-kilogram bag of lime, often added to poultry diets for calcium supplementation.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1724,7 +1724,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Cost of a 25-kilogram bag of salt.'),
+                                                          'The price of a 25-kilogram bag of salt, used in small amounts in feed to maintain electrolyte balance.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1946,7 +1946,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Price for a 1-kilogram pack of methionine.'),
+                                                          'The cost of a 1-kilogram pack of methionine, an essential amino acid in poultry feed for growth and feather development.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -2168,7 +2168,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Cost of a 1-kilogram pack of broiler vitamin-mineral premix.'),
+                                                          'The price of a 3-kilogram pack of vitamin and mineral premix, crucial for overall health and productivity.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -2390,7 +2390,7 @@ class _UpdateFeedsWidgetState extends State<UpdateFeedsWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Cost of a 50-kilogram bag of concentrates.'),
+                                                          'The cost of a 50-kilogram bag of feed concentrate, used to balance the diet.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>

@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_import, unused_import
+
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';

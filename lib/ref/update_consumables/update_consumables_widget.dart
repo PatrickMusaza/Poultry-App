@@ -1061,7 +1061,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Cost of feed for a 50-kilogram bag.'),
+                                                          'The price per 50-kilogram bag of poultry feed.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1283,7 +1283,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Cost of water consumption per liter per chicken.'),
+                                                          'The cost of water consumption per liter, essential for maintaining proper hydration for each chicken.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1505,7 +1505,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Daily cost of power consumption per chicken.'),
+                                                          'The daily cost of power consumption per chicken, used for lighting, heating, and equipment operation.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1727,7 +1727,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Cost of litter material per chicken.'),
+                                                          'The cost of bedding or litter material per chicken, used to absorb moisture and maintain hygiene.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>
@@ -1949,7 +1949,7 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'Cost of labor required for each chicken.'),
+                                                          'The labor cost per chicken for day-to-day farm operations, including feeding, cleaning, and monitoring.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>

@@ -18,6 +18,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:provider/provider.dart';
+import 'dart:async';
 import 'home_model.dart';
 export 'home_model.dart';
 
@@ -30,6 +31,8 @@ class HomeWidget extends StatefulWidget {
 
 class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
   late HomeModel _model;
+
+  bool _isWaiting = true;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -1438,16 +1441,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   houseInputsRecordList =
@@ -1543,16 +1560,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   text1InputsRecordList =
@@ -1688,16 +1719,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   textInputsRecordList =
@@ -1786,16 +1831,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   text2InputsRecordList =
@@ -1931,16 +1990,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   textInputsRecordList =
@@ -2029,16 +2102,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   text3InputsRecordList =
@@ -2174,16 +2261,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   textInputsRecordList =
@@ -2272,16 +2373,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   text4InputsRecordList =
@@ -2419,16 +2534,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   textInputsRecordList =
@@ -2517,16 +2646,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   text5InputsRecordList =
@@ -2664,16 +2807,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   textInputsRecordList =
@@ -2761,16 +2918,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   text6InputsRecordList =
@@ -2908,16 +3079,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   textInputsRecordList =
@@ -3013,16 +3198,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   snapshot.data!
                                                                       .isEmpty) {
                                                                 // Show error message if data is empty
-                                                                return Center(
-                                                                  child: Text(
-                                                                    'No documents available. Please check back later.',
-                                                                    style: TextStyle(
-                                                                        fontSize:
-                                                                            16,
-                                                                        color: Colors
-                                                                            .red),
-                                                                  ),
-                                                                );
+// Set a delay of 5 seconds before allowing data check
+                                                                Timer(
+                                                                    Duration(
+                                                                        seconds:
+                                                                            3),
+                                                                    () {
+                                                                  setState(() {
+                                                                    _isWaiting =
+                                                                        false; // After 3 seconds, set _isWaiting to false
+                                                                  });
+                                                                });
+
+                                                                if (_isWaiting) {
+                                                                  return Center(
+                                                                    child: Text(
+                                                                      'No documents available. Please check back later or call your service provider.',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Colors.red),
+                                                                    ),
+                                                                  );
+                                                                }
                                                               }
                                                               List<InputsRecord>
                                                                   text7InputsRecordList =
@@ -3105,9 +3304,16 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                     if (!snapshot.hasData ||
                                         snapshot.data!.isEmpty) {
                                       // Show error message if data is empty
+                                      // Set a delay of 5 seconds before allowing data check
+                                      Timer(Duration(seconds: 5), () {
+                                        setState(() {
+                                          _isWaiting =
+                                              false; // After 3 seconds, set _isWaiting to false
+                                        });
+                                      });
                                       return Center(
                                         child: Text(
-                                          'No documents available. Please check back later.',
+                                          'No documents available. Please check back later or call your service provider',
                                           style: TextStyle(
                                               fontSize: 16, color: Colors.red),
                                         ),
@@ -5990,9 +6196,16 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                     if (!snapshot.hasData ||
                                         snapshot.data!.isEmpty) {
                                       // Show error message if data is empty
+                                      // Set a delay of 5 seconds before allowing data check
+                                      Timer(Duration(seconds: 5), () {
+                                        setState(() {
+                                          _isWaiting =
+                                              false; // After 3 seconds, set _isWaiting to false
+                                        });
+                                      });
                                       return Center(
                                         child: Text(
-                                          'No documents available. Please check back later.',
+                                          'No documents available. Please check back later or call your service provider',
                                           style: TextStyle(
                                               fontSize: 16, color: Colors.red),
                                         ),
@@ -6682,8 +6895,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                                                             child: Text(
                                                                                                               formatNumber(
                                                                                                                 (tabBarInputsRecord!.chickens.toDouble()) * (((tabBarInputsRecord!.grownBroilers) * 0.95) - ((columnConsumablesRecord!.vaccines) / 300 + (columnConsumablesRecord!.selling) + (columnConsumablesRecord!.transport) + (columnConsumablesRecord!.feeds) * 0.08 + (columnConsumablesRecord!.water) * 10 + (columnConsumablesRecord!.power) + (columnConsumablesRecord!.litter) + (columnConsumablesRecord!.labour) + (tabBarInputsRecord!.daysOldChick.toDouble()))),
-                                                                                                                formatType: FormatType.scientific, //from decimal to scientific 
-                                                                                                                //decimalType: DecimalType.automatic, 
+                                                                                                                formatType: FormatType.scientific, //from decimal to scientific
+                                                                                                                //decimalType: DecimalType.automatic,
                                                                                                               ),
                                                                                                               style: FlutterFlowTheme.of(context).displaySmall.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).displaySmallFamily,
@@ -7210,7 +7423,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                                                               formatNumber(
                                                                                                                 (tabBarInputsRecord!.chickens.toDouble()) * (((tabBarInputsRecord!.grownBroilers) * 0.95) - ((columnConsumablesRecord!.vaccines) / 300 + (columnConsumablesRecord!.selling) + (columnConsumablesRecord!.transport) + (((1 / 50) * ((dashboardFeedsRecord!.maize) * 2.210396476 + (dashboardFeedsRecord!.fullfatsoya) * 0.897797357 + (dashboardFeedsRecord!.lowfatsoya) * 0.642290749 + (dashboardFeedsRecord!.fishmeal) * 0.089039648 + (dashboardFeedsRecord!.dicalciumphosphate) * 0.088 + (dashboardFeedsRecord!.lime) * 0.036 + (dashboardFeedsRecord!.salt) * 0.016 + (dashboardFeedsRecord!.methionine) * 0.42378855 + (dashboardFeedsRecord!.broilervitMineralpremix) * 0.2))) * 1 + (columnConsumablesRecord!.water) * 10 + (columnConsumablesRecord!.power) + (columnConsumablesRecord!.litter) + (columnConsumablesRecord!.labour) + (tabBarInputsRecord!.daysOldChick.toDouble()))),
                                                                                                                 formatType: FormatType.scientific,
-                                                                                                               // decimalType: DecimalType.automatic,
+                                                                                                                // decimalType: DecimalType.automatic,
                                                                                                               ),
                                                                                                               style: FlutterFlowTheme.of(context).displaySmall.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).displaySmallFamily,
@@ -14832,9 +15045,16 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                     if (!snapshot.hasData ||
                                         snapshot.data!.isEmpty) {
                                       // Show error message if data is empty
+                                      // Set a delay of 5 seconds before allowing data check
+                                      Timer(Duration(seconds: 5), () {
+                                        setState(() {
+                                          _isWaiting =
+                                              false; // After 3 seconds, set _isWaiting to false
+                                        });
+                                      });
                                       return Center(
                                         child: Text(
-                                          'No documents available. Please check back later.',
+                                          'No documents available. Please check back later or call your service provider',
                                           style: TextStyle(
                                               fontSize: 16, color: Colors.red),
                                         ),

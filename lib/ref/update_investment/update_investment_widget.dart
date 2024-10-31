@@ -1721,7 +1721,7 @@ class _UpdateInvestmentWidgetState extends State<UpdateInvestmentWidget> {
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       content: Text(
-                                                          'The price of each set of tools required for farm maintenance, cleaning, and repairs.'),
+                                                          'The price of each set of tools (1fork, 1 wheelbarrow,1 broom, and 1 shovel) required for farm maintenance, cleaning, and repairs.'),
                                                       actions: [
                                                         TextButton(
                                                           onPressed: () =>

@@ -1113,7 +1113,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                                   await formInputsRecord!.reference.update({
                                                                                     ...createInputsRecordData(
                                                                                       chickens: int.tryParse(_model.chickenTextController.text),
-                                                                                      currency: formInputsRecord?.currency,
+                                                                                      currency: _model.currencyValue,
                                                                                       id: currentUserUid,
                                                                                       daysOldChick: int.tryParse(_model.daysTextController.text),
                                                                                       grownBroilers: double.tryParse(_model.broilersTextController.text),
@@ -2399,7 +2399,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('The price of each set of tools required for farm maintenance, cleaning, and repairs.'),
+                                                                              content: Text('The price of each set of tools (1fork, 1 wheelbarrow,1 broom, and 1 shovel) required for farm maintenance, cleaning, and repairs.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3292,7 +3292,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Cost of feed for a 50-kilogram bag.'),
+                                                                              content: Text('The price per 50-kilogram bag of poultry feed.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3459,7 +3459,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Cost of water consumption per liter per chicken.'),
+                                                                              content: Text('The cost of water consumption per liter, essential for maintaining proper hydration for each chicken.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3626,7 +3626,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Daily cost of power consumption per chicken.'),
+                                                                              content: Text('The daily cost of power consumption per chicken, used for lighting, heating, and equipment operation.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3793,7 +3793,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Cost of litter material per chicken.'),
+                                                                              content: Text('The cost of bedding or litter material per chicken, used to absorb moisture and maintain hygiene.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -3960,7 +3960,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Cost of labor required for each chicken.'),
+                                                                              content: Text('The labor cost per chicken for day-to-day farm operations, including feeding, cleaning, and monitoring.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -4351,7 +4351,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Cost of a 50-kilogram bag of maize.'),
+                                                                              content: Text('The cost of a 50-kilogram bag of maize, a key component in poultry feed.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -4518,7 +4518,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Price for a 50-kilogram bag of full-fat soya.'),
+                                                                              content: Text('The price of a 50-kilogram bag of full-fat soya, another crucial feed ingredient.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -4685,7 +4685,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Price for a 50-kilogram bag of low-fat soya.'),
+                                                                              content: Text('The price of a 50-kilogram bag of low-fat soya.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -4852,7 +4852,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Cost of a 50-kilogram bag of fish meal.'),
+                                                                              content: Text('The cost of a 50-kilogram bag of fish meal, used as a protein source in poultry diets.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5019,7 +5019,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Price of a 50-kilogram bag of dicalcium phosphate.'),
+                                                                              content: Text('The price of a 50-kilogram bag of dicalcium phosphate, used for bone development in poultry.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5186,7 +5186,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Cost of a 50-kilogram bag of lime.'),
+                                                                              content: Text('The cost of a 50-kilogram bag of lime, often added to poultry diets for calcium supplementation.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5353,7 +5353,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Cost of a 25-kilogram bag of salt.'),
+                                                                              content: Text('The price of a 25-kilogram bag of salt, used in small amounts in feed to maintain electrolyte balance.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5520,7 +5520,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Price for a 1-kilogram pack of methionine.'),
+                                                                              content: Text('The cost of a 1-kilogram pack of methionine, an essential amino acid in poultry feed for growth and feather development.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5687,7 +5687,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Cost of a 1-kilogram pack of broiler vitamin-mineral premix.'),
+                                                                              content: Text('The price of a 3-kilogram pack of vitamin and mineral premix, crucial for overall health and productivity.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
@@ -5854,7 +5854,7 @@ class _PricingWidgetState extends State<PricingWidget> {
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              content: Text('Cost of a 50-kilogram bag of concentrates.'),
+                                                                              content: Text('The cost of a 50-kilogram bag of feed concentrate, used to balance the diet.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
