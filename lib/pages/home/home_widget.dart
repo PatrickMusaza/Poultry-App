@@ -170,12 +170,22 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData || snapshot.data!.isEmpty) {
           // Show error message if data is empty
+
+          Timer(Duration(seconds: 3), () {
+            setState(() {
+              _isWaiting = false; // After 3 seconds, set _isWaiting to false
+            });
+          });
+
+        if(_isWaiting){
+
           return Center(
             child: Text(
-              'No documents available. Please check back later.',
+              'No documents available. Please check back later or call your service provider.',
               style: TextStyle(fontSize: 16, color: Colors.red),
             ),
           );
+          }
         }
         List<PricingRecord> homePricingRecordList = snapshot.data!;
         final homePricingRecord = homePricingRecordList.isNotEmpty
