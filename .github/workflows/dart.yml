@@ -47,6 +47,12 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
+      # Ensure paths are compatible for the build
+      - name: Convert paths for compatibility
+        run: |
+          find . -type f -name "*.gradle" -exec sed -i '' 's|\\|/|g' {} +
+          find . -type f -name "*.properties" -exec sed -i '' 's|\\|/|g' {} +
+
       - name: Build Android APK
         run: flutter build apk --release
 
