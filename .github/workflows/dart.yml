@@ -1,11 +1,11 @@
-name: iOS-ipa-build
+name: iOS-Android-Build
 
 on:
   workflow_dispatch:
 
 jobs:
-  build-ios:
-    name: 🎉 iOS Build
+  build-ios-android:
+    name: 🎉 iOS and Android Build
     runs-on: macos-latest
 
     steps:
@@ -18,7 +18,7 @@ jobs:
           channel: 'stable'
           architecture: x64
 
-      # Step 3: Get Flutter dependencies all
+      # Step 3: Get Flutter dependencies
       - name: Install Flutter packages
         run: flutter pub get
 
@@ -47,12 +47,18 @@ jobs:
         run: zip -qq -r -9 FlutterIpaExport.ipa Payload
         working-directory: build/ios/iphoneos
 
-      # Step 8: Upload the .ipa file as a release asset
+      # Step 8: Build Android APK
+      - name: Build Android APK
+        run: flutter build apk --release
+
+      # Step 9: Upload the .ipa file and .apk file as release assets
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: build/ios/iphoneos/FlutterIpaExport.ipa
+          file: |
+            build/ios/iphoneos/FlutterIpaExport.ipa
+            build/app/outputs/flutter-apk/app-release.apk
           tag: v1.0
           overwrite: true
-          body: "This is the first release"
+          body: "This is the first release, including both iOS and Android builds."
