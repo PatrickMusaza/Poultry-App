@@ -1,1 +1,0 @@
- C:\\Users\\user\\Downloads\\poultry\ all\\poultry\\.dart_tool\\flutter_build\\2cd0c3eb257a9278dc015780c9819e16\\native_assets.yaml: 

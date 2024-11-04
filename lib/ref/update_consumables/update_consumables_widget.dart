@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'dart:async';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -22,6 +23,8 @@ class UpdateConsumablesWidget extends StatefulWidget {
 
 class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
   late UpdateConsumablesModel _model;
+
+  bool _isWaiting = true;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -77,13 +80,24 @@ class _UpdateConsumablesWidgetState extends State<UpdateConsumablesWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData || snapshot.data!.isEmpty) {
           // Show error message if data is empty
+
+          Timer(Duration(seconds: 5), () {
+            setState(() {
+              _isWaiting = false; // After 5 seconds, set _isWaiting to false
+            });
+          });
+
+        if(_isWaiting){
+
           return Center(
             child: Text(
-              'No documents available. Please check back later.',
+              'No documents available. Please check back later or call your service provider.',
               style: TextStyle(fontSize: 16, color: Colors.red),
             ),
           );
+          }
         }
+        
         List<ConsumablesRecord> updateConsumablesConsumablesRecordList =
             snapshot.data!;
         final updateConsumablesConsumablesRecord =

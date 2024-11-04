@@ -171,9 +171,9 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
         if (!snapshot.hasData || snapshot.data!.isEmpty) {
           // Show error message if data is empty
 
-          Timer(Duration(seconds: 3), () {
+          Timer(Duration(seconds: 5), () {
             setState(() {
-              _isWaiting = false; // After 3 seconds, set _isWaiting to false
+              _isWaiting = false; // After 5 seconds, set _isWaiting to false
             });
           });
 
@@ -187,6 +187,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
           );
           }
         }
+
         List<PricingRecord> homePricingRecordList = snapshot.data!;
         final homePricingRecord = homePricingRecordList.isNotEmpty
             ? homePricingRecordList.first
@@ -246,18 +247,25 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           ),
                                           builder: (context, snapshot) {
                                             // Customize what your widget looks like when it's loading.
-                                            if (!snapshot.hasData ||
-                                                snapshot.data!.isEmpty) {
-                                              // Show error message if data is empty
-                                              return Center(
-                                                child: Text(
-                                                  'No documents available. Please check back later.',
-                                                  style: TextStyle(
-                                                      fontSize: 16,
-                                                      color: Colors.red),
-                                                ),
-                                              );
+                                            if (!snapshot.hasData || snapshot.data!.isEmpty) {
+                                            // Show error message if data is empty
+
+                                            Timer(Duration(seconds: 5), () {
+                                              setState(() {
+                                                _isWaiting = false; // After 5 seconds, set _isWaiting to false
+                                              });
+                                            });
+
+                                          if(_isWaiting){
+
+                                            return Center(
+                                              child: Text(
+                                                'No documents available. Please check back later or call your service provider.',
+                                                style: TextStyle(fontSize: 16, color: Colors.red),
+                                              ),
+                                            );
                                             }
+                                          }
                                             List<UsersRecord>
                                                 imageUsersRecordList =
                                                 snapshot.data!;

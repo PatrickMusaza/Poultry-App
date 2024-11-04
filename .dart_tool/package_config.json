@@ -1244,10 +1244,10 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-10-31T19:14:01.139051Z",
+  "generated": "2024-11-04T16:34:28.101414Z",
   "generator": "pub",
-  "generatorVersion": "3.5.3",
+  "generatorVersion": "3.5.4",
   "flutterRoot": "file:///C:/Config/App/Dev/Flutter/flutter_windows_3.19.6-stable/flutter",
-  "flutterVersion": "3.24.3",
+  "flutterVersion": "3.24.4",
   "pubCache": "file:///C:/Users/user/AppData/Local/Pub/Cache"
 }

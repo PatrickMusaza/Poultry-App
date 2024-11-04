@@ -11,6 +11,7 @@ import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'dart:async';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -27,6 +28,8 @@ class UpdateChickenWidget extends StatefulWidget {
 class _UpdateChickenWidgetState extends State<UpdateChickenWidget> {
   late UpdateChickenModel _model;
 
+  bool _isWaiting = true;
+  
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -66,12 +69,22 @@ class _UpdateChickenWidgetState extends State<UpdateChickenWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData || snapshot.data!.isEmpty) {
           // Show error message if data is empty
+
+          Timer(Duration(seconds: 5), () {
+            setState(() {
+              _isWaiting = false; // After 5 seconds, set _isWaiting to false
+            });
+          });
+
+        if(_isWaiting){
+
           return Center(
             child: Text(
-              'No documents available. Please check back later.',
+              'No documents available. Please check back later or call your service provider.',
               style: TextStyle(fontSize: 16, color: Colors.red),
             ),
           );
+          }
         }
         List<InputsRecord> updateChickenInputsRecordList = snapshot.data!;
         final updateChickenInputsRecord =
