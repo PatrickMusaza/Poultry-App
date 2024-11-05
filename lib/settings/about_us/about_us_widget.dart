@@ -71,7 +71,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                 FFLocalizations.of(context).getText(
                   'o96nds37' /* SIVYHAM AGRICULTURE TECHNOLOGY */,
                 ),
-                minFontSize: 10,
+                maxFontSize: 16,
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily:
                           FlutterFlowTheme.of(context).headlineMediumFamily,

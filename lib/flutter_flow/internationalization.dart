@@ -108,7 +108,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // SignIn
   {
     'ex3qgtz1': {
-      'en': 'SIVYHAM AGRICULTURE TECHNOLOGY',
+      'en': 'SIVYHAM AGRICULTURE',
       'fr': '',
     },
     'xpgq77qt': {
@@ -204,7 +204,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
     'o96nds37': {
-      'en': 'SIVYHAM AGRICULTURE TECHNOLOGY',
+      'en': 'SIVYHAM AGRICULTURE',
       'fr': '',
     },
   },
@@ -246,7 +246,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // signUp
   {
     '68lq85nn': {
-      'en': 'SIVYHAM AGRICULTURE TECHNOLOGY',
+      'en': 'SIVYHAM AGRICULTURE',
       'fr': '',
     },
     'aeuxn8os': {
@@ -7013,7 +7013,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   //Management
   {
 'w6zqmj7g':{
-  'en':'SIVYHAM AGRICULTURE TECHNOLOGY',
+  'en':'SIVYHAM AGRICULTURE',
 },
 'tn5mczkg':{
   'en': 'Frequently Asked Questions',
