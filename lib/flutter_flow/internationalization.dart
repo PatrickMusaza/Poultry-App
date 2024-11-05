@@ -7027,5 +7027,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
 'mcoo8awz':{
   'en': 'Factors that affect broiler chicken production costs include feed prices, labor costs, energy costs, and the cost of medications and vaccines. Feed prices can have a significant impact on overall production costs as feed typically accounts for the largest expense in raising broiler chickens. Labor costs, including wages and benefits for farm workers, also play a role in determining production costs. Energy costs, such as electricity and heating, are necessary to maintain suitable conditions in broiler houses, and fluctuations in energy prices can affect production costs. Additionally, the cost of medications and vaccines to prevent and treat diseases in broiler chickens is another important factor to consider when calculating production costs.',
 }, 
+'b1hbjuj9':{
+  'en': 'How do feed prices impact broiler chicken production costs?',
+}, 
+'5ddav2si':{
+  'en': 'Expand to check the answer',
+}, 
+'8r3vlw4u':{
+  'en': 'Feed prices have a substantial impact on broiler chicken production costs. Feed typically accounts for the largest expense in raising broiler chickens, making up around 70% of the total production costs. Fluctuations in feed prices, which are influenced by factors such as weather conditions, crop yields, and global demand, can significantly affect the profitability of broiler chicken production. When feed prices increase, producers may face higher production costs, which can reduce profit margins. Conversely, lower feed prices can lead to reduced production costs, allowing producers to potentially increase their profit margins. Therefore, closely monitoring and managing feed prices is crucial for maximizing profitability in broiler chicken production.',
+}, 
   },
 ].reduce((a, b) => a..addAll(b));
