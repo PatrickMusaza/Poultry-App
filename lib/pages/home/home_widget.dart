@@ -6913,8 +6913,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                                                             child: Text(
                                                                                                               formatNumber(
                                                                                                                 (tabBarInputsRecord!.chickens.toDouble()) * (((tabBarInputsRecord!.grownBroilers) * 0.95) - ((columnConsumablesRecord!.vaccines) / 300 + (columnConsumablesRecord!.selling) + (columnConsumablesRecord!.transport) + (columnConsumablesRecord!.feeds) * 0.08 + (columnConsumablesRecord!.water) * 10 + (columnConsumablesRecord!.power) + (columnConsumablesRecord!.litter) + (columnConsumablesRecord!.labour) + (tabBarInputsRecord!.daysOldChick.toDouble()))),
-                                                                                                                formatType: FormatType.scientific, //from decimal to scientific
-                                                                                                                //decimalType: DecimalType.automatic,
+                                                                                                                formatType: FormatType.decimal, //from decimal to scientific
+                                                                                                                decimalType: DecimalType.automatic,
                                                                                                               ),
                                                                                                               style: FlutterFlowTheme.of(context).displaySmall.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).displaySmallFamily,
@@ -7440,8 +7440,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                                                             child: Text(
                                                                                                               formatNumber(
                                                                                                                 (tabBarInputsRecord!.chickens.toDouble()) * (((tabBarInputsRecord!.grownBroilers) * 0.95) - ((columnConsumablesRecord!.vaccines) / 300 + (columnConsumablesRecord!.selling) + (columnConsumablesRecord!.transport) + (((1 / 50) * ((dashboardFeedsRecord!.maize) * 2.210396476 + (dashboardFeedsRecord!.fullfatsoya) * 0.897797357 + (dashboardFeedsRecord!.lowfatsoya) * 0.642290749 + (dashboardFeedsRecord!.fishmeal) * 0.089039648 + (dashboardFeedsRecord!.dicalciumphosphate) * 0.088 + (dashboardFeedsRecord!.lime) * 0.036 + (dashboardFeedsRecord!.salt) * 0.016 + (dashboardFeedsRecord!.methionine) * 0.42378855 + (dashboardFeedsRecord!.broilervitMineralpremix) * 0.2))) * 1 + (columnConsumablesRecord!.water) * 10 + (columnConsumablesRecord!.power) + (columnConsumablesRecord!.litter) + (columnConsumablesRecord!.labour) + (tabBarInputsRecord!.daysOldChick.toDouble()))),
-                                                                                                                formatType: FormatType.scientific,
-                                                                                                                // decimalType: DecimalType.automatic,
+                                                                                                                formatType: FormatType.decimal,
+                                                                                                                decimalType: DecimalType.automatic,
                                                                                                               ),
                                                                                                               style: FlutterFlowTheme.of(context).displaySmall.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).displaySmallFamily,
@@ -7967,8 +7967,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                                                             child: Text(
                                                                                                               formatNumber(
                                                                                                                 (tabBarInputsRecord!.chickens.toDouble()) * (((tabBarInputsRecord!.grownBroilers) * 0.95) - ((columnConsumablesRecord!.vaccines) / 300 + (columnConsumablesRecord!.selling) + (columnConsumablesRecord!.transport) + ((((dashboardFeedsRecord!.maize) * 0.048) + ((dashboardFeedsRecord!.concentrates) * 0.032))) * 1 + (columnConsumablesRecord!.water) * 10 + (columnConsumablesRecord!.power) + (columnConsumablesRecord!.litter) + (columnConsumablesRecord!.labour) + (tabBarInputsRecord!.daysOldChick.toDouble()))),
-                                                                                                                formatType: FormatType.scientific,
-                                                                                                                // decimalType: DecimalType.automatic,
+                                                                                                                formatType: FormatType.decimal,
+                                                                                                                decimalType: DecimalType.automatic,
                                                                                                               ),
                                                                                                               style: FlutterFlowTheme.of(context).displaySmall.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).displaySmallFamily,
