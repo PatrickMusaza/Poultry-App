@@ -52,7 +52,7 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:extractNativeLibs="false"
         android:icon="@mipmap/ic_launcher"
-        android:label="Poultry App"
+        android:label="Natech PoultryPro"
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true" >
         <meta-data

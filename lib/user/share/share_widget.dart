@@ -203,7 +203,7 @@ class _ShareWidgetState extends State<ShareWidget> {
                                     'musazapatrick369@gmail.com',
                                   ),
                                   query: {
-                                    'subject': 'Poultry App',
+                                    'subject': 'Natech PoultryPro',
                                     'body':
                                         'Hello, I found this app useful. May be you may try it out and see how your Productivity will increase.',
                                   }

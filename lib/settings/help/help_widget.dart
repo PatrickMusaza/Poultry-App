@@ -319,9 +319,9 @@ class _HelpWidgetState extends State<HelpWidget> with TickerProviderStateMixin {
                                       scheme: 'mailto',
                                       path: 'support@na-kandaconsultancy.com',
                                       query: {
-                                        'subject': 'Help on Poultry App',
+                                        'subject': 'Help on Natech PoultryPro',
                                         'body':
-                                            'I need a quick help on poultry app',
+                                            'I need a quick help on Natech PoultryPro',
                                       }
                                           .entries
                                           .map((MapEntry<String, String> e) =>

@@ -107,8 +107,8 @@
 53        android:extractNativeLibs="false"
 54        android:icon="@mipmap/ic_launcher"
 54-->C:\Users\user\Downloads\poultry all\poultry\android\app\src\main\AndroidManifest.xml:22:9-43
-55        android:label="Poultry App"
-55-->C:\Users\user\Downloads\poultry all\poultry\android\app\src\main\AndroidManifest.xml:20:9-36
+55        android:label="Natech PoultryPro"
+55-->C:\Users\user\Downloads\poultry all\poultry\android\app\src\main\AndroidManifest.xml:20:9-42
 56        android:requestLegacyExternalStorage="true"
 56-->C:\Users\user\Downloads\poultry all\poultry\android\app\src\main\AndroidManifest.xml:23:9-52
 57        android:supportsRtl="true" >

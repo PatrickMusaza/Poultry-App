@@ -108,7 +108,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // SignIn
   {
     'ex3qgtz1': {
-      'en': 'SIVYHAM AGRICULTURE',
+      'en': 'Natech PoultryPro',
       'fr': '',
     },
     'xpgq77qt': {
@@ -184,7 +184,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'uf6y5bda': {
       'en':
-          'At Sivyham Agriculture Technology, we are passionate about providing high-quality poultry products to our customers. With years of experience in the industry, we have built a reputation for delivering fresh and delicious poultry products that meet the highest standards of quality and safety. Whether you\'re looking for chicken, turkey, or duck, we have a wide selection of products to choose from. We also offer a range of poultry-related services, including poultry farming advice and consulting. Visit us today and experience the difference of Poultry Farm.',
+          'At Natech PoultryPro, we are passionate about providing high-quality poultry products to our customers. With years of experience in the industry, we have built a reputation for delivering fresh and delicious poultry products that meet the highest standards of quality and safety. Whether you\'re looking for chicken, turkey, or duck, we have a wide selection of products to choose from. We also offer a range of poultry-related services, including poultry farming advice and consulting. Visit us today and experience the difference of Poultry Farm.',
       'fr': '',
     },
     'papmoojm': {
@@ -204,7 +204,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
     'o96nds37': {
-      'en': 'SIVYHAM AGRICULTURE',
+      'en': 'Natech PoultryPro',
       'fr': '',
     },
   },
@@ -246,7 +246,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // signUp
   {
     '68lq85nn': {
-      'en': 'SIVYHAM AGRICULTURE',
+      'en': 'Natech PoultryPro',
       'fr': '',
     },
     'aeuxn8os': {
@@ -6397,7 +6397,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '4xx2wfiw': {
       'en':
-          'At Poultry App, we value the privacy and security of our users. This Privacy Policy explains how we collect, use, and disclose personal information when you use our app. By using our app, you consent to the collection, use, and disclosure of your personal information as described in this Privacy Policy.',
+          'At Natech PoultryPro, we value the privacy and security of our users. This Privacy Policy explains how we collect, use, and disclose personal information when you use our app. By using our app, you consent to the collection, use, and disclosure of your personal information as described in this Privacy Policy.',
       'fr': '',
     },
     'u2cojxbl': {
@@ -6505,7 +6505,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '4ykhhmoa': {
       'en':
-          'By using this poultry app, you agree to the following terms and conditions:',
+          'By using Natech PoultryPro, you agree to the following terms and conditions:',
       'fr': '',
     },
     '0nyekrs3': {
@@ -7013,7 +7013,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   //Management
   {
 'w6zqmj7g':{
-  'en':'SIVYHAM AGRICULTURE',
+  'en':'Natech PoultryPro',
 },
 'tn5mczkg':{
   'en': 'Frequently Asked Questions',

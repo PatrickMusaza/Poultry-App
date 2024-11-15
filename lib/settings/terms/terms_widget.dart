@@ -127,7 +127,7 @@ class _TermsWidgetState extends State<TermsWidget> {
                             16.0, 16.0, 16.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '4ykhhmoa' /* By using this poultry app, you... */,
+                            '4ykhhmoa' /* By using this Natech PoultryPro, you... */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium

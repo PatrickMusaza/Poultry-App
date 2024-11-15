@@ -133,7 +133,7 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
                             EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '4xx2wfiw' /* At Poultry App, we value the p... */,
+                            '4xx2wfiw' /* At Natech PoultryPro, we value the p... */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
